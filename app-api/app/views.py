@@ -15,7 +15,7 @@ def validate(request):
         print(data)
         #print(JSON.parse(request))
         file_name=default_storage.save(file.name,file)
-        csvFile = pandas.read_csv("C:\\Users\\vhars\\Downloads\\hackathon\\media\\"+file_name)
+        csvFile = pandas.read_csv("C:\\Users\\vhars\\Downloads\\hackathon\\app-api\\media\\"+file_name)
         csvHeaders=[]
         for col in csvFile:
             csvHeaders.append(col)
